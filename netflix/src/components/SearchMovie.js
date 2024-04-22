@@ -9,7 +9,7 @@ import MovieList from "./MovieList";
 const SearchMovie = () => {
   const [searchMovie, setSearchMovie] = useState("");
   const dispatch = useDispatch();
-  const isLoading = useSelector((store) => store.app.isLoading);
+  const isLoading = useSelector((store) => store.user.isLoading);
   const { movieName, searchedMovie } = useSelector((store) => store.searchMovie);
 
   const submitHandler = async (e) => {
@@ -38,7 +38,10 @@ const SearchMovie = () => {
                 </form>
 
             </div>
-             <MovieList title={movieName} searchMovie={true} movies={searchedMovie}/>
+            {
+                searchedMovie ? ( <MovieList title={movieName} searchMovie={true} movies={searchedMovie}/>) : (<h1>Movie Not Found!!</h1>)
+            }
+             
     </>
 
   );
