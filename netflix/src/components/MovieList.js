@@ -11,7 +11,7 @@ const MovieList = ({title, movies, searchMovie=false}) => {
               {
                 movies?.map((movie)=>{
                   return (
-                    <MovieCard key={movie.id}posterPath={movie.poster_path}/>
+                    <MovieCard key={movie.id}posterPath={movie.poster_path} movieId={movie.Id}/>
                   )
                 })
               }
@@ -23,4 +23,4 @@ const MovieList = ({title, movies, searchMovie=false}) => {
   )
 }
 
-export default MovieList
+export default MovieList 
