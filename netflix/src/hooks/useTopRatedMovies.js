@@ -1,7 +1,6 @@
 import axios from "axios";
 import { getTopRatedMovie } from "../redux/movieSlice";
 import { Top_Rated_Movies, options } from "../utils/constant";
-//import { useDispatch } from "@reduxjs/toolkit";
 import {useDispatch} from 'react-redux';
 
 const useTopRatedMovies = () => {

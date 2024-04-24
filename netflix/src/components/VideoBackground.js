@@ -22,11 +22,6 @@ const VideoBackground = ({ movieId, bool }) => {
       } else {
         setTrailerData(res.data.results[0]);
       }
-      // console.log(res.data.results)
-      // await dispatch(
-      //   getTrailerMovie(trailer.length > 0 ? trailer[0] : res.data.results[0])
-      // );
-      // return true;
     } catch (error) {
       console.log(error);
     }
@@ -48,7 +43,6 @@ const VideoBackground = ({ movieId, bool }) => {
       <iframe
         className={`${bool ? "[w-100%]" : "w-screen aspect-video" } `}
         src={`https://www.youtube.com/embed/fCVm5U2ob8U?si=${trailerData?.key}&autoplay=1&mute=1`}
-        // src={`https://www.youtube.com/embed/fCVm5U2ob8U?si=AfQDsokijMmZHPj3&autoplay=1&mute=1`}
         title="YouTube video player"
         frameBorder="0"
         allowFullScreen

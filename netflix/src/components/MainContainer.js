@@ -11,7 +11,6 @@ const MainContainer = () => {
     
     const {overview, id, title} = movie[4];
     console.log(id, "ggyu")
-   // useMovieById(id); 
 
   return (
     <div>

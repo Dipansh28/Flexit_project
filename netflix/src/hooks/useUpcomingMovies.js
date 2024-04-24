@@ -1,7 +1,6 @@
 import axios from "axios";
 import { getUpcomingMovies } from "../redux/movieSlice";
 import { Upcoming_Movie, options } from "../utils/constant";
-//import { useDispatch } from "@reduxjs/toolkit" 
 import {useDispatch} from 'react-redux';
 
 const useUpcomingMovies = () => {
