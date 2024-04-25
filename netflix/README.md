@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+//## In the project, clicking on any movie poster on the browse page or through the search function triggers the playback of the same video that is already running in the background. This issue stems from the API returning the same ID for all video requests. As a result, the platform defaults to playing the background video across various selections due to the lack of unique ID outputs from the API. ##//   
